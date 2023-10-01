@@ -6,6 +6,7 @@ export class UserRepository {
     users: User[] = [];
 
     async findByUsername(username: string) {
+        const name = this.users.forEach((user) => console.log(user))
         return this.users.find(user => user.username === username);
     }
 
